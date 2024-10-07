@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "My project",
+  "main": "server.js",
+  "keywords": [
+    "Login"
+  ],
+  "author": "Daddy",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @layer utilities {
+            .bg-primary {
+                background-color: #433878;
+            }
+            .bg-secondary {
+                background-color: #7E60BF;
+            }
+            .bg-light {
+                background-color: #FFE1FF;
+            }
+            .text-highlight {
+                color: #F4B1F0;
+            }
+            .text-primary {
+                color: #433878;
+            }
+            .text-secondary {
+                color: #7E60BF;
+            }
+            .placeholder-secondary {
+                color: #7E60BF;
+            }
+        }
+    </style>
+</head>
+<body class="relative flex items-center justify-center min-h-screen bg-light">
+    <div class="absolute inset-0 bg-light backdrop-blur-md bg-opacity-60"></div>
+
+    <div class="relative bg-primary text-highlight p-6 rounded-lg shadow-lg max-w-xs w-full z-10">
+        <h1 class="text-center text-xl font-bold mb-4">Login to Your Account</h1>
+        <form action="#" method="post" class="space-y-4">
+            <div class="relative">
+                <label for="username" class="sr-only">Username</label>
+                <i class="ri-user-fill text-secondary absolute left-3 top-1/2 transform -translate-y-1/2"></i>
+                <input type="text" id="username" name="username" placeholder="Username" required
+                    class="w-full pl-10 p-3 h-9 rounded bg-light text-primary placeholder-secondary focus:outline-none focus:ring-2 focus:ring-secondary">
+            </div>
+            <div class="relative">
+                <label for="password" class="sr-only">Password</label>
+                <i class="ri-lock-fill text-secondary absolute left-3 top-1/2 transform -translate-y-1/2"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required
+                    class="w-full pl-10 p-3 h-9 rounded bg-light text-primary placeholder-secondary focus:outline-none focus:ring-2 focus:ring-secondary">
+            </div>
+
+            <div class="flex items-center space-x-2 text-sm">
+                <input type="checkbox" name="remember" id="remember" class="form-checkbox h-4 w-4 text-secondary">
+                <label for="remember" class="text-secondary">Remember Me</label>
+            </div>
+
+            <input type="submit" value="Login"
+                class="w-full bg-secondary text-light p-3 rounded cursor-pointer hover:bg-highlight hover:text-primary transition-all">
+        </form>
+
+        <div class="text-center mt-3 text-sm">
+            <a href="#" class="text-highlight hover:underline">Forgot Password?</a>
+        </div>
+    </div>
+
+    <footer class="absolute bottom-4 text-center text-secondary text-sm z-10">
+        <p>&copy; 2024 Our Website. M.S.U Health Care Services. <a href="#" class="text-highlight hover:underline">Privacy Policy</a></p>
+    </footer>
+    <script src="./server.js"></script>
+</body>
+</html>
